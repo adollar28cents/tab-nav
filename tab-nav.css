@@ -1,0 +1,45 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+body {
+	color: #000;
+	background: #fff;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/************** Tab Nav **************/
+.tab-nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	list-style: none;
+	position: relative;
+	margin: 1.5rem;
+	padding: 0 1rem;
+	border-bottom: 1px solid #ddd;
+	font-size: .875rem;
+}
+
+.tab-nav a {
+	display: inline-block;
+	padding: .5rem;
+	color: #bbb;
+	text-decoration: none;
+	transition: color .1s;
+}
+
+.tab-nav a:hover, .tab-nav a:focus, .tab-nav a:active {
+	color: #2f7db8;
+}
+
+.tab-nav a.active {
+	color: #000;
+}
+
+.marker {
+	position: absolute;
+	bottom: -1px;
+	border-bottom: 1px solid #000;
+	transition: all .2s ease-out;
+}
